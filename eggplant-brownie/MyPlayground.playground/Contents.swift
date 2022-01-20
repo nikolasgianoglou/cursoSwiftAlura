@@ -39,4 +39,3 @@ func method(par1: String, par2: Double){
 }
 method(par1 : "Nikolas", par2 : 33.3)
 
-
