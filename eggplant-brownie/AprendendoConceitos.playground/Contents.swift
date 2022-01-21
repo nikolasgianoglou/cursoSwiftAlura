@@ -52,3 +52,15 @@ if let gab = optional{
 
 
 let numero = Int("5")
+
+//Classes
+class Refeicao{
+    var nome: String
+    var felicidade: String
+    
+    init(nome:String, felicidade: String){
+        self.nome = nome
+        self.felicidade = felicidade
+    }
+}
+

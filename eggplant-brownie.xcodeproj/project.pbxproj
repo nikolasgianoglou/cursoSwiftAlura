@@ -13,6 +13,8 @@
 		F80BB812279991F50093F833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80BB810279991F50093F833 /* Main.storyboard */; };
 		F80BB814279991F70093F833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80BB813279991F70093F833 /* Assets.xcassets */; };
 		F80BB817279991F70093F833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80BB815279991F70093F833 /* LaunchScreen.storyboard */; };
+		F819D1E8279AC8FD003E77F2 /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F819D1E7279AC8FD003E77F2 /* Refeicao.swift */; };
+		F819D1EA279ACA18003E77F2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F819D1E9279ACA18003E77F2 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F80BB813279991F70093F833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F80BB816279991F70093F833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F80BB818279991F70093F833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F819D1E7279AC8FD003E77F2 /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
+		F819D1E9279ACA18003E77F2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F8C922862799DFAB00E62C80 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F8C922872799E6A100E62C80 /* AprendendoConceitos.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AprendendoConceitos.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
@@ -58,17 +62,43 @@
 		F80BB809279991F50093F833 /* eggplant-brownie */ = {
 			isa = PBXGroup;
 			children = (
+				F819D1ED279ACB15003E77F2 /* View */,
+				F819D1EC279ACADA003E77F2 /* Controller */,
+				F819D1EB279ACAB2003E77F2 /* Models */,
 				F80BB80A279991F50093F833 /* AppDelegate.swift */,
 				F80BB80C279991F50093F833 /* SceneDelegate.swift */,
-				F80BB80E279991F50093F833 /* ViewController.swift */,
 				F8C922862799DFAB00E62C80 /* MyPlayground.playground */,
-				F80BB810279991F50093F833 /* Main.storyboard */,
 				F80BB813279991F70093F833 /* Assets.xcassets */,
 				F80BB815279991F70093F833 /* LaunchScreen.storyboard */,
 				F80BB818279991F70093F833 /* Info.plist */,
 				F8C922872799E6A100E62C80 /* AprendendoConceitos.playground */,
 			);
 			path = "eggplant-brownie";
+			sourceTree = "<group>";
+		};
+		F819D1EB279ACAB2003E77F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F819D1E9279ACA18003E77F2 /* Item.swift */,
+				F819D1E7279AC8FD003E77F2 /* Refeicao.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F819D1EC279ACADA003E77F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F80BB80E279991F50093F833 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F819D1ED279ACB15003E77F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F80BB810279991F50093F833 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F819D1EA279ACA18003E77F2 /* Item.swift in Sources */,
 				F80BB80F279991F50093F833 /* ViewController.swift in Sources */,
 				F80BB80B279991F50093F833 /* AppDelegate.swift in Sources */,
 				F80BB80D279991F50093F833 /* SceneDelegate.swift in Sources */,
+				F819D1E8279AC8FD003E77F2 /* Refeicao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
