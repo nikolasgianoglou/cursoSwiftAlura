@@ -34,3 +34,21 @@ func todasCalorias(totalDeCalorias: Array<Double>) -> Double{ //a declaracao de 
 
 let total = todasCalorias(totalDeCalorias: totalCalorias)
 print(total)
+
+//Optionals
+let optional: Double? = 3.0
+func aprendendo(){
+    guard let nome = optional else{
+        print("Nao ha valor")
+        return
+    }
+}
+
+//Com o guard pode-se usar a variavel em outro escopo do projeto
+
+if let gab = optional{
+    print(gab) //gab so pode ser usado dentro desse escopo
+}
+
+
+let numero = Int("5")
